@@ -17,3 +17,5 @@ This mini project showcases a **real-time data pipeline** that combines **Apache
    Docker Compose orchestrates a multi-broker Kafka cluster, multi-node Spark cluster, and supporting services (Schema Registry, monitoring console), allowing each component to scale or be replaced independently.
 
 ---
+
+```mermaid flowchart LR subgraph Docker-Compose Environment A["Data Producer (main.py)"] -->|Writes to| T1["Topic: financial_transactions"] T1 --> B["Kafka Cluster"] B -->|Provides messages from financial_transactions| C["Spark Structured Streaming (spark.py)"] C -->|Writes to| T2["Topic: transaction_aggregates"] T2 --> B B -->|Monitored by| D["Redpanda Console:8080"] B -->|Manages schemas| E["Schema Registry:18081"] F["Spark Master & Workers"] --> C end A --- F ```
