@@ -40,13 +40,13 @@ flowchart LR
 
 1. **Start the services**
    
-  docker compose up -v
+     docker compose up -v
 
-3. **Access the Redpanda Console**
+2. **Access the Redpanda Console**
    
-  Open http://localhost:8080 in your browser.
-  Use this console to view and manage Kafka topics, consumer groups, and more.
+     Open http://localhost:8080 in your browser.
+     Use this console to view and manage Kafka topics, consumer groups, and more.
 
-4. **Access the Spark UI**
+3. **Access the Spark UI**
    
-   Visit http://localhost:9190 to monitor Spark jobs, worker status, and resource usage.
+      Visit http://localhost:9190 to monitor Spark jobs, worker status, and resource usage.
