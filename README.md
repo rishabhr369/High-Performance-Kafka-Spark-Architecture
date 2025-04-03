@@ -5,7 +5,7 @@ This mini project showcases a **real-time data pipeline** that combines **Apache
 ### Key Capabilities
 
 1. **Generates High-Volume Synthetic Data**  
-   A custom data producer simulates high-frequency financial transactions and sends them to Kafka in real time.
+   A custom data producer simulates high-frequency financial transactions and sends them to Kafka in real time. Data Volume of upto 40 thousand records per second is produced.
 
 2. **Handles Real-Time Ingestion and Buffering**  
    Kafka serves as a distributed messaging platform, ingesting and retaining these streaming events for downstream consumers.
